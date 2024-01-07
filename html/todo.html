@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Management Application</title>
+    <link rel="stylesheet" href="../css/todo.css">
+</head>
+<body>
+    <div class="root">
+        <div class="header">
+            <img src="../images/image-todo.png" alt="ToDo Management App Logo" class="header-image">
+            <span class="header-title">ToDo Management Application</span>
+        </div>
+        <div class="content">
+           <div class="content-actions">
+                <div class="content-search">
+                    <input id="content-search-input" type="text" class="content-search-input">
+                    <button id="content-search-button" class="content-search-button" disabled>Pretraži</button>
+                    <button id="content-show-all-button" class="content-search-button">Prikaži sve</button>
+                </div>
+                <button id="content-add-todo-button" class="content-add-todo-button">Dodaj obavezu</button>
+           </div>
+           <div class="content-todo-items-container" id="content-todo-items-container">
+           </div>
+        </div>
+    </div>
+    <img src="../images/image-cover.jpg" alt="ToDo Management App Cover Image" class="cover-image">
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <span class="header-title">Dodaj obavezu</span>
+            <div id="modal-error-message" class="modal-error-message"></div>
+            <div class="modal-input-group">
+                <label class="modal-label" for="add-todo-title">Naslov</label>
+                <input type="text" class="modal-input" id="add-todo-title">
+            </div>
+            <div class="modal-input-group">
+                <label class="modal-label" for="add-todo-description">Opis (opcionalno)</label>
+                <textarea id="add-todo-description" rows="5" type="text" class="modal-input"></textarea>
+            </div>
+            <div class="modal-actions">
+                <button id="modal-close-modal-button" class="content-search-button">Poništi</button>
+                <button id="modal-add-todo-button" class="content-add-todo-button">Potvrdi</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/todo.js" defer></script>
+</body>
+</html>

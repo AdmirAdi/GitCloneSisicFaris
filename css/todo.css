@@ -1,0 +1,197 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    font-family: sans-serif;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-grow: 1;
+    height: 100%;
+    padding: 24px;
+}
+
+.cover-image {
+    height: 100%;
+    object-fit: cover;
+    width: 30%;
+}
+
+.header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header-image {
+    width: 48px;
+}
+
+.header-title {
+    font-size: 36px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.content-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-search {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    gap: 12px;
+}
+
+.content-search-input {
+    padding: 6px 12px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 6px;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.content-search-button {
+    height: 100%;
+    padding: 6px 12px;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.content-add-todo-button {
+    background-color: beige;
+    height: 100%;
+    padding: 6px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 50%;
+    background-color: white;
+    padding: 24px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.modal-label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.modal-input {
+    padding: 6px 12px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+textarea {
+    resize: none;
+    font-family: sans-serif;
+}
+
+.modal-actions {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 12px;
+}
+
+.modal-datepicker {
+    font-family: sans-serif;
+}
+
+.content-todo-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.content-todo-item {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.content-todo-item-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.content-todo-item-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content-todo-item-description {
+    font-size: 14px;
+}
+
+.content-todo-item-date {
+    font-size: 12px;
+    color: grey;
+}
+
+.content-todo-item-delete-image {
+    width: 24px;
+    cursor: pointer;
+}
+
+.modal-error-message {
+    padding: 12px;
+    border-radius: 6px;
+    background-color: rgba(255,0,0,0.5);
+    color: white;
+    font-size: 14px;
+    display: none;
+    font-weight: bold;
+}
